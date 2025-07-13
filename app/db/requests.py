@@ -54,6 +54,7 @@ def add_channel(channel_id: int, channel_name: str):
         save_config(config)
 
         logger.info(f"Канал привязан: {channel_name}[<code>{channel_id}</code>]")
+        return
         
     logger.info(f"Канал уже привязан: {channel_name}[<code>{channel_id}</code>]")
 
